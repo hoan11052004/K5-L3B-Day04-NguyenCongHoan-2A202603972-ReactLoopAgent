@@ -2,10 +2,14 @@ import argparse
 import json
 import os
 import sys
+from load_env import load_env
 from agent import run_agent
 from providers import Provider
 from status_tools import StatusTools
 from bonus.tools import BonusTools
+
+
+load_env()
 
 
 def run(question, mode, provider_name, model, max_steps, fail=False, bonus=False):
