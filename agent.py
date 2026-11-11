@@ -1,12 +1,6 @@
-"""Agent loop cho bài lab status investigation.
-
-Vòng lặp ở đây cố ý dùng trực tiếp interface của ``Provider`` và ``Tools``;
-không phụ thuộc vào framework agent nào khác.
-"""
 
 import json
 import re
-
 from status_tools import SCHEMAS
 
 
